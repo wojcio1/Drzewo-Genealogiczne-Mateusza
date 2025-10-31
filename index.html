@@ -11,6 +11,18 @@
 </script>
 <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1"> <META NAME="GENERATOR" CONTENT="GreatFamily 1.1 - FREEWARE"> 
 <TITLE>The family of Mateusz Mzyk</TITLE>
+  <script>
+    // Prosty mechanizm hasła
+    const correctPassword = "tajnehaslo"; // <- tutaj wpisz swoje hasło
+
+    const userPassword = prompt("Podaj hasło, aby uzyskać dostęp:");
+
+    if (userPassword !== correctPassword) {
+      alert("Niepoprawne hasło. Dostęp zabroniony.");
+      document.write("<h1>403 - Dostęp zabroniony</h1>");
+      throw new Error("Zablokowano dostęp");
+    }
+  </script>
 </HEAD>
 <FRAMESET COLS="23%,77%">
 <FRAME SRC="left.html" NAME="left" 
